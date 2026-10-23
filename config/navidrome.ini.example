@@ -1,0 +1,25 @@
+# Example Navidrome config (Windows MSI install).
+# Real file location: C:\Program Files\Navidrome\navidrome.ini
+# Values use TOML syntax. Single quotes keep Windows backslashes literal.
+# Full option list: https://www.navidrome.org/docs/usage/configuration-options/
+
+# Your music library
+MusicFolder = 'C:\Users\<you>\Music\Library'
+
+# Where Navidrome keeps its database and cache
+DataFolder = 'C:\ProgramData\Navidrome'
+
+# Port the web UI and Subsonic API listen on
+Port = 4533
+
+# Listen on all interfaces. Safe here because the firewall rule only allows
+# Private networks and nothing is port-forwarded on the router.
+# For a stricter setup, bind to the Tailscale IP only, e.g. Address = '100.x.y.z'
+# (Navidrome will then fail to start if Tailscale isn't up yet.)
+Address = '0.0.0.0'
+
+# How often to rescan the library for new files
+ScanSchedule = '@every 1h'
+
+# Log level: error, warn, info, debug
+LogLevel = 'info'

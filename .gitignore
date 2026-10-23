@@ -1,0 +1,38 @@
+# Local config (may contain real paths, IPs, or credentials)
+*.ini
+!*.ini.example
+*.bak
+*.toml
+!*.toml.example
+
+# Secrets and keys
+*.key
+*.pem
+id_*
+authorized_keys
+administrators_authorized_keys
+.env
+
+# Logs and databases
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+# Never commit music
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.opus
+*.wav
+*.aac
+*.m3u
+*.m3u8
+
+# OS / editor junk
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
